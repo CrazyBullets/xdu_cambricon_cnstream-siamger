@@ -1,0 +1,16 @@
+{
+  "osd" : {
+    "class_name" : "cnstream::MotTcpOsd",
+    "parallelism" : 1,
+    "max_input_queue_size" : 32,
+    "custom_params" : {
+      "label_path" : "../../label_map_visdrone.txt",
+      "mot_tcp_port" : "8000",
+      // "mot_tcp_ip" : "172.17.0.3",
+      "mot_tcp_ip" : "172.17.0.4",
+      "label_size" : "small",
+      "track_target": 43
+    }
+  }
+}
+

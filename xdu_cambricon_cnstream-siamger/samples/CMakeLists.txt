@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.8.7)
+if(POLICY CMP0046)
+  cmake_policy(SET CMP0046 NEW)
+endif()
+if(POLICY CMP0054)
+  cmake_policy(SET CMP0054 NEW)
+endif()
+
+add_subdirectory(cns_launcher)
+add_subdirectory(multi_pipelines)
+add_subdirectory(simple_run_pipeline)
+add_subdirectory(udp_test)

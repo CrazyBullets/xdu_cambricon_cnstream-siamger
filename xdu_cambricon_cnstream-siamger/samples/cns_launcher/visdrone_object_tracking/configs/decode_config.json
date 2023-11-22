@@ -1,0 +1,13 @@
+{
+  "source" : {
+    "class_name" : "cnstream::DataSource",
+    "custom_params" : {
+      "reuse_cndec_buf" : "true",
+      "output_type" : "mlu",
+      "decoder_type" : "mlu",
+      "input_buf_number" : 16,
+      "output_buf_number" : 32,
+      "device_id" : 0
+    }
+  }
+}

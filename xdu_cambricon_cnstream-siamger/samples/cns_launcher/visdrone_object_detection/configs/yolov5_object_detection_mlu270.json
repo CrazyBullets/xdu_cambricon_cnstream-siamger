@@ -1,0 +1,22 @@
+{
+  "detector" : {
+    "class_name" : "cnstream::Inferencer2",
+    "parallelism" : 16,
+    "max_input_queue_size" : 32,
+    "custom_params" : {
+      "model_path" : "/workspace/volume/private/examples/models/offline/cint8/yolov5s-visdrone-feax2_MLU270_accuracy.cambricon",
+      "func_name" : "subnet0",
+      // Uncomment the following 2 lines to use cncv
+      //"preproc_name" : "CNCV",
+      //"normalize" : true,
+      "preproc_name" : "RCOP",
+      "postproc_name" : "VideoPostprocYolov5",
+      "keep_aspect_ratio" : "true",
+      "model_input_pixel_format" : "RGBA32",
+      "batching_timeout" : 100,
+      "threshold" : 0.01,
+      "engine_num" : 16,
+      "device_id" : 0
+    }
+  }
+}

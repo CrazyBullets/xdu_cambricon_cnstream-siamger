@@ -1,0 +1,18 @@
+{
+  "tracker" : {
+    "class_name" : "cnstream::Tracker",
+    "parallelism" : 16,
+    "max_input_queue_size" : 20,
+    "custom_params" : {
+      "max_cosine_distance": "0.06",
+      "max_iou_distance": "0.7",
+      "max_age": "30",
+      "n_init": "1",
+      "n_budget": "100",
+      "track_name" : "IoUMatch",
+      "need_feature" : false,
+      "coordinate" : "xyar",
+      "device_id" : 0
+    }
+  }
+}

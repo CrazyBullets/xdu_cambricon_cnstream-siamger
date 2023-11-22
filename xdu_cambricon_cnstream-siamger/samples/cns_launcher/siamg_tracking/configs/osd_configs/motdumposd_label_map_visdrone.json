@@ -1,0 +1,13 @@
+{
+  "osd" : {
+    "class_name" : "cnstream::MotDumpOsd",
+    "parallelism" : 1,
+    "max_input_queue_size" : 32,
+    "custom_params" : {
+      "label_path" : "../../label_map_visdrone.txt",
+      "mot_dump_path" : "../../output/",
+      "label_size" : "small"
+    }
+  }
+}
+

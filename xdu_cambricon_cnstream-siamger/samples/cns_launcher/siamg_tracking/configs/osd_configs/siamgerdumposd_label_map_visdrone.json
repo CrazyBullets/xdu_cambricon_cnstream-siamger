@@ -1,0 +1,12 @@
+{
+  "osd" : {
+    "class_name" : "cnstream::SiamgerDumpOsd",
+    "parallelism" : 1,
+    "max_input_queue_size" : 32,
+    "custom_params" : {
+      "mot_dump_path" : "../../output/",
+      "label_size" : "small"
+    }
+  }
+}
+

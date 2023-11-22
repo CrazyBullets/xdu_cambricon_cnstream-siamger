@@ -1,0 +1,17 @@
+{
+    "tracker" : {
+      "class_name" : "cnstream::Siginfer",
+      "parallelism" : 16,
+      "max_input_queue_size" : 20,
+      "custom_params" : {
+        "model_path" : "/workspace/volume/private/jgh/work/models/offline/cint8/siamger_MLU270_accuracy_out2.cambricon",
+        "model_input_pixel_format" : "RGB24",
+        "preproc_name" : "VideoPreprocSiamger",
+        // "keep_aspect_ratio" : "true",
+        "postproc_name" : "VideoPostprocSiamger",
+        "init_loc": "706 679 155 141",
+        "device_id" : 0
+      }
+    }
+  }
+  

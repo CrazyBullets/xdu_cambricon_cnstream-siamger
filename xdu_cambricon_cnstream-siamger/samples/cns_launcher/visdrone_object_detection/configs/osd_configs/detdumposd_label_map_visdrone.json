@@ -1,0 +1,14 @@
+{
+  "osd" : {
+    "class_name" : "cnstream::DetDumpOsd",
+    //"class_name" : "cnstream::TestOsd",
+    "parallelism" : 16,
+    "max_input_queue_size" : 32,
+    "custom_params" : {
+      "label_path" : "../../label_map_visdrone.txt",
+      "det_dump_path" : "../../output/",
+      "label_size" : "small"
+    }
+  }
+}
+

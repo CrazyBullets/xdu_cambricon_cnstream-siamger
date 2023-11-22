@@ -1,0 +1,20 @@
+{
+  "tracker" : {
+    "class_name" : "cnstream::Tracker",
+    "parallelism" : 16,
+    "max_input_queue_size" : 32,
+    "custom_params" : {
+      "model_path" : "../../../../data/models/feature_extract_for_tracker_b4c4_argb_mlu270.cambricon",
+      "max_cosine_distance": "0.06",
+      "max_iou_distance": "0.7",
+      "max_age": "30",
+      "n_init": "3",
+      "n_budget": "100",
+      "track_name" : "OCSORT",
+      "bytetrack_threshold" : 0.6,  // high threshold for bytetrack. low threshold is set in detection
+      "need_feature" : false,       // use bytetrack without feature for faster inference
+      "coordinate" : "xyar",        // supported xyah, xywh, xyar
+      "device_id" : 0
+    }
+  }
+}

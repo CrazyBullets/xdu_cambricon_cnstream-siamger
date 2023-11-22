@@ -1,0 +1,12 @@
+{
+  "source" : {
+    "class_name" : "cnstream::DataSource",
+    "custom_params" : {
+      "reuse_cndec_buf" : "true",
+      "output_type" : "cpu",
+      "decoder_type" : "cpu",
+      "output_buf_number" : 16,
+      "device_id" : 0
+    }
+  }
+}

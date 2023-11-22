@@ -1,0 +1,13 @@
+{
+  "osd" : {
+    "class_name" : "cnstream::DetDumpOsd",
+    "parallelism" : 1,
+    "max_input_queue_size" : 32,
+    "custom_params" : {
+      "label_path" : "../../label_map_visdrone.txt",
+      "det_dump_path" : "/workspace/volume/private/CNStream/samples/cns_launcher/visdrone_object_detection/output/",
+      "label_size" : "small"
+    }
+  }
+}
+
